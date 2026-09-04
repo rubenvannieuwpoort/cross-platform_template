@@ -1,0 +1,2 @@
+read_verilog *.sv
+synth_ecp5 -json build.json
