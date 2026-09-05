@@ -4,8 +4,8 @@ set_property CONFIG_VOLTAGE 3.3 [current_design]
 ####################################################################################################################
 #                                               CLOCK 100MHz                                                       #
 ####################################################################################################################
-set_property -dict { PACKAGE_PIN "H4"    IOSTANDARD LVCMOS33 } [get_ports { clk }]   ;                     # IO_L12P_T1_MRCC_35            Sch = CLK1
-create_clock -period 10.000 -name clk_base [get_ports clk]
+set_property -dict { PACKAGE_PIN "H4"    IOSTANDARD LVCMOS33 } [get_ports { clk_sys }]   ;                     # IO_L12P_T1_MRCC_35            Sch = CLK1
+create_clock -period 10.000 -name clk_base [get_ports clk_sys]
 
 ####################################################################################################################
 #                                                   RESET - S3                                                     #
