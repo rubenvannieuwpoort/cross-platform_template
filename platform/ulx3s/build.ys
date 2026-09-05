@@ -1,2 +1,2 @@
-read_verilog *.sv
-synth_ecp5 -json build.json
+read_verilog -sv *.sv
+synth_ecp5 -top top -json build.json
