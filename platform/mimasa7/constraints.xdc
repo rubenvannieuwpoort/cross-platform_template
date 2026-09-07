@@ -7,6 +7,9 @@ set_property CONFIG_VOLTAGE 3.3 [current_design]
 set_property -dict { PACKAGE_PIN "H4"    IOSTANDARD LVCMOS33 } [get_ports { clk_sys }]   ;                     # IO_L12P_T1_MRCC_35            Sch = CLK1
 create_clock -period 10.000 -name clk_base [get_ports clk_sys]
 
+# Generated 50MHz clock from PLL
+create_generated_clock -name clk_gen -source [get_pins clock_gen/pll/CLKIN1] -multiply_by 8 -divide_by 16 [get_pins clock_gen/pll/CLKOUT0]
+
 ####################################################################################################################
 #                                                   RESET - S3                                                     #
 ####################################################################################################################
