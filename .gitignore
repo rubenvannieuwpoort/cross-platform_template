@@ -1,1 +1,5 @@
 build/
+platform/mimasa7/numato_mimasa7.cfg
+platform/mimasa7/cablelist.txt
+platform/mimasa7/bscan_spi_xc7a50t.bit
+platform/mimasa7/bscan_mimas_a7_xc7a50tfgg484.bit
